@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.subspec 'TestPodspec' do |ks|
     # 这个地方路径换一下就可以了
     ks.source_files = 'AFNetworking/TestPodspec/*'
+    ks.frameworks = "CFNetwork", "CoreGraphics","SystemConfiguration","MobileCoreServices","Foundation","UIKit","Security","CoreAudio","AVFoundation"
+    ks.dependency 'CocoaAsyncSocket', '7.4.1'
     ks.requires_arc = true
   end
 end
