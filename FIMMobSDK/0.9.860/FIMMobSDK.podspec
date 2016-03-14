@@ -26,15 +26,6 @@ Pod::Spec.new do |s|
   
   s.dependency 'AFNetworking', '2.5.4'
   s.dependency 'CocoaAsyncSocket', '7.4.1'
-  s.dependency 'JSONModel', '1.1.0'
-  s.dependency 'DACircularProgress', '2.3.1'
-  s.dependency 'MirageImagePicker', '~>1.0.3'
-  s.dependency 'PSTCollectionView', '1.2.3'
-  s.dependency 'MBProgressHUD', '0.9.1'
-  s.dependency 'MWPhotoBrowser', '~>2.1.1'
-  s.dependency 'MadMaxService', '~>0.9'
-  s.dependency 'SWTableViewCell', '~> 0.3.7'
-  s.dependency 'YZInterstellarPush', '~>0.0.1'
   
   s.requires_arc = true
   s.default_subspec = 'Pro'
