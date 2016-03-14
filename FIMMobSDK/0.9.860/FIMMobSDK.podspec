@@ -39,8 +39,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.default_subspec = 'Pro'
   
-  s.subspec 'Pro' do |Pro|
-  #subspec for developers who don't want the third party PayPal, Stripe, Instagram, Facebook bloat
+  s.subspec 'Pro' do |pro|
+ 
   end
 
   s.subspec 'FIMMobSocket' do |ks|
