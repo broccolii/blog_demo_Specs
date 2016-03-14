@@ -17,21 +17,20 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
 
   s.source       = { :git => "https://github.com/broccolii/FIMMobSDK.git", :tag => s.version.to_s }
-
-  s.source_files  = "FIMMobSDK/*.{h,m}"
-  s.vendored_libraries = "FIMMobSDK/FIMMobSDK/Kits/lib/*.{a}"
-  s.libraries = "z","stdc++","sqlite3"
   
-  s.frameworks = "CFNetwork", "CoreGraphics","SystemConfiguration","MobileCoreServices","Foundation","UIKit","Security","CoreAudio","AVFoundation"
-  
-  s.dependency 'AFNetworking', '2.5.4'
-  s.dependency 'CocoaAsyncSocket', '7.4.1'
-  
-  s.requires_arc = true
   s.default_subspec = 'Pro'
   
   s.subspec 'Pro' do |pro|
- 
+    pro.source_files  = "FIMMobSDK/*.{h,m}"
+    pro.vendored_libraries = "FIMMobSDK/FIMMobSDK/Kits/lib/*.{a}"
+    pro.libraries = "z","stdc++","sqlite3"
+    
+    pro.frameworks = "CFNetwork", "CoreGraphics","SystemConfiguration","MobileCoreServices","Foundation","UIKit","Security","CoreAudio","AVFoundation"
+    
+    pro.dependency 'AFNetworking', '2.5.4'
+    pro.dependency 'CocoaAsyncSocket', '7.4.1'
+    
+    pro.requires_arc = true
   end
 
   s.subspec 'FIMMobSocket' do |ks|
